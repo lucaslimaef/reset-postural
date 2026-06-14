@@ -94,7 +94,7 @@ h1 .hl{color:var(--vio)}
 /* postura visual: silhueta desabada -> alinhada */
 .posefig{display:flex;gap:14px;justify-content:center;align-items:flex-end;margin:30px auto 0;max-width:330px}
 .pose{flex:1;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 10px 13px;text-align:center}
-.pose .glyph{font-size:46px;line-height:1;display:block;filter:grayscale(.2)}
+.pose .posesvg{width:60px;height:84px;display:block;margin:0 auto}
 .pose .lbl{font-size:11.5px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;margin-top:9px}
 .pose.bad .lbl{color:var(--warn)}
 .pose.good{border-color:#bfeae4;background:linear-gradient(180deg,var(--good-soft),var(--card))}
@@ -217,9 +217,23 @@ h2 .hl{color:var(--vio)}
     <h1>Sua cabeça vive à frente dos ombros. <span class="hl">Isso tem conserto.</span></h1>
     <p class="sub">Cabeça pra frente, ombro enrolado, aquela leve corcunda. Não é da idade nem falta de "sentar reto". É músculo que devia te segurar ereto e está desligado. O Reset Postural reativa esse músculo em 12 semanas: 25 minutos, 3x por semana, em casa ou na academia. Com fotos e testes pra você ver a evolução, não só sentir.</p>
     <div class="posefig">
-      <div class="pose bad"><span class="glyph">🧎</span><span class="lbl">Hoje</span></div>
+      <div class="pose bad">
+        <svg class="posesvg" viewBox="0 0 120 150" aria-hidden="true">
+          <line x1="60" y1="12" x2="60" y2="142" stroke="#cbb8f5" stroke-width="2" stroke-dasharray="4 5"/>
+          <path d="M60 140 C 57 114, 55 94, 54 76 C 53 63, 58 50, 72 43" fill="none" stroke="#b45309" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="82" cy="31" r="12" fill="#b45309"/>
+        </svg>
+        <span class="lbl">Hoje</span>
+      </div>
       <div class="arrow">→</div>
-      <div class="pose good"><span class="glyph">🧍</span><span class="lbl">12 semanas</span></div>
+      <div class="pose good">
+        <svg class="posesvg" viewBox="0 0 120 150" aria-hidden="true">
+          <line x1="60" y1="12" x2="60" y2="142" stroke="#9fe0d6" stroke-width="2" stroke-dasharray="4 5"/>
+          <path d="M60 140 C 57 114, 63 86, 60 58 C 59 50, 60 47, 60 45" fill="none" stroke="#0d9488" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="60" cy="32" r="12" fill="#0d9488"/>
+        </svg>
+        <span class="lbl">12 semanas</span>
+      </div>
     </div>
     <div class="hero-badges">
       <span>🏠 Casa ou academia</span>
