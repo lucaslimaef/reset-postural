@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reset Postural | 12 Semanas | Lucas Lima</title>
+<meta name="description" content="Cabeça pra frente, ombro caído, corcunda? Não é jeito nem falta de vontade: é músculo desligado. Endireite sua postura em 12 semanas, 25 minutos 3x por semana, em casa ou na academia.">
+<link rel="icon" href="assets/favicon-32.png">
+<meta property="og:title" content="Reset Postural | 12 Semanas">
+<meta property="og:description" content="Postura boa não é 'sentar reto'. É treino. Reset Postural endireita ombro caído, cabeça pra frente e corcunda em 12 semanas, em casa ou na academia.">
+<meta property="og:image" content="https://lucaslimaef.github.io/reset-postural/assets/og-image.jpg">
+
+<!-- ============================================================
+     ONDE COLAR O LINK DE PAGAMENTO (quando tiver):
+     Procure por  STRIPE_LINK  no final do código.
+     Enquanto estiver vazio, o botão manda pro WhatsApp.
+     Depois da compra, o Stripe deve redirecionar pra:
+     https://lucaslimaef.github.io/reset-postural/acesso/?k=musculonaovontade
+     ============================================================ -->
+
+<!-- Pixel Performix -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','264800457918824');fbq('track','PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=264800457918824&ev=PageView&noscript=1"/></noscript>
+<!-- /Pixel Performix -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --bg:#f5f6fb;
+  --bg2:#eef0f9;
+  --card:#ffffff;
+  --line:#e4e7f2;
+  --ink:#16183a;
+  --muted:#616a8c;
+  --vio:#7c3aed;
+  --vio2:#6d28d9;
+  --ind:#4f46e5;
+  --vio-soft:#f0ebfe;
+  --good:#0d9488;
+  --good-soft:#e3f6f3;
+  --warn:#b45309;
+  --warn-soft:#fdf3e3;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:'Inter',system-ui,sans-serif;line-height:1.58;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+.wrap{max-width:680px;margin:0 auto;padding:0 20px;position:relative}
+.center{text-align:center}
+.disp{font-family:'Space Grotesk',sans-serif;letter-spacing:-.5px}
+
+/* linha de prumo: fio vertical guia, motivo de alinhamento */
+.plumb{position:relative}
+.plumb::before{content:"";position:absolute;left:50%;top:0;bottom:0;width:2px;margin-left:-1px;
+  background:linear-gradient(180deg,transparent,rgba(124,58,237,.20) 12%,rgba(124,58,237,.20) 88%,transparent);z-index:0}
+
+/* CTA */
+.cta{
+  display:block;width:100%;max-width:430px;margin:0 auto;cursor:pointer;position:relative;z-index:2;
+  background:linear-gradient(115deg,var(--vio),var(--ind));
+  color:#fff;border:0;padding:17px 22px;border-radius:16px;
+  font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:18px;letter-spacing:-.2px;
+  text-decoration:none;text-align:center;
+  box-shadow:0 16px 34px -10px rgba(124,58,237,.55);transition:transform .08s}
+.cta small{display:block;font-family:'Inter',sans-serif;font-weight:500;font-size:12px;opacity:.92;margin-top:3px;letter-spacing:0}
+.cta:active{transform:scale(.985)}
+.cta-sub{font-size:12.5px;color:var(--muted);text-align:center;margin-top:11px;position:relative;z-index:2}
+
+/* HERO */
+.hero{position:relative;padding:42px 0 40px;background:
+  radial-gradient(640px 360px at 50% -8%, rgba(124,58,237,.14), transparent 65%)}
+.tag{display:inline-flex;align-items:center;gap:8px;font-size:12px;letter-spacing:.04em;font-weight:600;
+  color:var(--vio2);background:var(--vio-soft);border:1px solid #e0d6fb;padding:8px 15px;border-radius:999px;margin-bottom:22px}
+h1{font-family:'Space Grotesk',sans-serif;font-size:44px;line-height:1.04;font-weight:700;letter-spacing:-1.4px}
+h1 .hl{color:var(--vio)}
+.sub{color:var(--muted);font-size:16.5px;margin:18px auto 0;max-width:540px}
+.hero-badges{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin:24px 0 28px}
+.hero-badges span{font-size:13px;background:var(--card);border:1px solid var(--line);padding:9px 14px;border-radius:11px;font-weight:500}
+
+/* postura visual: silhueta desabada -> alinhada */
+.posefig{display:flex;gap:14px;justify-content:center;align-items:flex-end;margin:30px auto 0;max-width:330px}
+.pose{flex:1;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 10px 13px;text-align:center}
+.pose .glyph{font-size:46px;line-height:1;display:block;filter:grayscale(.2)}
+.pose .lbl{font-size:11.5px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;margin-top:9px}
+.pose.bad .lbl{color:var(--warn)}
+.pose.good{border-color:#bfeae4;background:linear-gradient(180deg,var(--good-soft),var(--card))}
+.pose.good .lbl{color:var(--good)}
+.posefig .arrow{align-self:center;font-size:22px;color:var(--vio);font-weight:700}
+
+/* SECTION */
+section{padding:46px 0}
+.s-alt{background:linear-gradient(180deg,var(--bg2),transparent)}
+h2{font-family:'Space Grotesk',sans-serif;font-size:32px;font-weight:700;letter-spacing:-1px;text-align:center;margin:0 0 10px;line-height:1.08}
+h2 .hl{color:var(--vio)}
+.lead{color:var(--muted);font-size:15.5px;text-align:center;max-width:540px;margin:0 auto 24px;position:relative;z-index:2}
+
+/* CHECKLIST de sinais (interativo) */
+.check{max-width:540px;margin:0 auto;display:grid;gap:10px;position:relative;z-index:2}
+.check label{display:flex;gap:12px;align-items:flex-start;cursor:pointer;background:var(--card);border:1px solid var(--line);
+  border-left:3px solid var(--warn);padding:14px 15px;font-size:15px;border-radius:12px;user-select:none;transition:.16s}
+.check label:has(input:checked){border-color:var(--vio);border-left-color:var(--vio);background:var(--vio-soft)}
+.check input{accent-color:var(--vio);width:19px;height:19px;flex:0 0 auto;margin-top:2px}
+.check-verdict{max-width:540px;margin:18px auto 0;text-align:center;font-size:15px;padding:16px;border-radius:14px;
+  border:1px dashed var(--line);color:var(--muted);transition:.25s;position:relative;z-index:2}
+.check-verdict.on{border-color:var(--vio);color:var(--ink);background:var(--vio-soft)}
+.check-verdict b{color:var(--vio)}
+
+/* FASES: timeline com fio de prumo */
+.spine{max-width:560px;margin:26px auto 0;position:relative;padding-left:36px;z-index:2}
+.spine::before{content:"";position:absolute;left:12px;top:10px;bottom:10px;width:2px;
+  background:linear-gradient(180deg,var(--vio),var(--good))}
+.vert{position:relative;margin-bottom:14px}
+.vert::before{content:"";position:absolute;left:-30px;top:16px;width:14px;height:14px;border-radius:50%;
+  background:var(--card);border:3px solid var(--vio);box-shadow:0 0 0 4px var(--vio-soft)}
+.vert .plate{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 17px}
+.vert .ph-tag{font-family:'Space Grotesk',sans-serif;font-size:13px;font-weight:600;letter-spacing:.02em;color:var(--vio)}
+.vert h3{font-family:'Space Grotesk',sans-serif;font-size:20px;font-weight:700;letter-spacing:-.4px;margin:2px 0 4px}
+.vert p{font-size:14px;color:var(--muted)}
+
+/* BENEFÍCIOS */
+.bens{max-width:560px;margin:0 auto;display:grid;gap:10px;position:relative;z-index:2}
+.bens li{list-style:none;background:var(--card);border:1px solid var(--line);border-radius:13px;padding:14px 16px;
+  font-size:15px;display:flex;gap:12px;align-items:flex-start}
+.bens li::before{content:"✓";color:var(--good);font-weight:800;flex:0 0 auto;font-size:16px;margin-top:1px}
+.bens li b{color:var(--ink)}
+
+/* AUTORIDADE */
+.coach{max-width:560px;margin:0 auto;display:flex;gap:18px;align-items:center;background:var(--card);
+  border:1px solid var(--line);border-radius:18px;padding:20px;position:relative;z-index:2}
+.coach img{width:104px;height:104px;object-fit:cover;border-radius:16px;border:1px solid var(--line)}
+.coach h3{font-family:'Space Grotesk',sans-serif;font-size:21px;font-weight:700;letter-spacing:-.4px}
+.coach p{font-size:13.5px;color:var(--muted);margin-top:5px}
+.coach b{color:var(--vio)}
+.proof-num{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin:22px 0;position:relative;z-index:2}
+.proof-num .plate{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:15px 18px;text-align:center;min-width:120px}
+.proof-num b{display:block;font-family:'Space Grotesk',sans-serif;font-size:28px;font-weight:700;color:var(--vio)}
+.proof-num span{font-size:12px;color:var(--muted)}
+.prints{display:grid;grid-template-columns:1fr 1fr;gap:12px;max-width:560px;margin:0 auto;position:relative;z-index:2}
+.prints img{width:100%;border:1px solid var(--line);border-radius:12px}
+.prints-cap{font-size:12.5px;color:var(--muted);text-align:center;max-width:520px;margin:14px auto 0;line-height:1.5;position:relative;z-index:2}
+
+/* OFERTA */
+.offer{max-width:480px;margin:0 auto;background:var(--card);border:1px solid var(--vio);border-radius:20px;
+  padding:26px 22px;box-shadow:0 24px 60px -24px rgba(124,58,237,.45);position:relative;z-index:2}
+.offer .badge{display:inline-block;background:var(--vio);color:#fff;font-weight:700;font-size:12px;letter-spacing:.04em;
+  padding:7px 14px;border-radius:999px;margin-bottom:16px}
+.stack{display:grid;gap:9px;margin-bottom:18px}
+.stack .it{display:flex;gap:9px;font-size:14.5px;padding-bottom:9px;border-bottom:1px dashed var(--line)}
+.stack .it::before{content:"✓";color:var(--good);font-weight:800}
+.price-row{text-align:center;margin:16px 0 6px}
+.price-row .from{color:var(--muted);text-decoration:line-through;font-size:16px}
+.price-row .now{font-family:'Space Grotesk',sans-serif;font-size:56px;font-weight:700;line-height:1;letter-spacing:-2px}
+.price-row .now small{font-size:24px;vertical-align:super;margin-right:3px;letter-spacing:0}
+.price-row .alt{font-size:13.5px;color:var(--muted);margin-top:7px}
+.price-row .after{font-size:13px;color:var(--warn);margin-top:8px;font-weight:600}
+.pay-line{text-align:center;font-size:12px;color:var(--muted);margin-bottom:18px}
+
+/* URGÊNCIA */
+.urg{max-width:520px;margin:0 auto;text-align:center;background:linear-gradient(150deg,var(--warn-soft),var(--vio-soft));
+  border:1px solid var(--line);border-radius:16px;padding:20px;position:relative;z-index:2}
+.urg b{color:var(--warn)}
+
+/* FAQ */
+.faq{max-width:560px;margin:0 auto;position:relative;z-index:2}
+.faq details{background:var(--card);border:1px solid var(--line);border-radius:13px;margin-bottom:10px;overflow:hidden}
+.faq summary{cursor:pointer;padding:16px;font-weight:600;font-size:15px;list-style:none;display:flex;justify-content:space-between;gap:10px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:var(--vio);font-size:20px;flex:0 0 auto}
+.faq details[open] summary::after{content:"–"}
+.faq .a{padding:0 16px 16px;color:var(--muted);font-size:14px}
+
+/* PS */
+.ps{max-width:560px;margin:30px auto 0;background:var(--bg2);border:1px solid var(--line);border-radius:16px;
+  padding:20px;font-size:14.5px;color:var(--muted);position:relative;z-index:2}
+.ps b{color:var(--ink)}
+
+/* FOOT */
+.foot{text-align:center;padding:40px 0 130px;border-top:1px solid var(--line);margin-top:30px}
+.foot .sig{font-weight:700;font-family:'Space Grotesk',sans-serif}
+.foot .sig b{color:var(--vio)}
+.foot a{color:var(--vio);text-decoration:none}
+.foot .disc{font-size:11px;color:#9097b5;margin-top:16px;line-height:1.6;max-width:560px;margin-left:auto;margin-right:auto}
+
+/* BARRA FLUTUANTE */
+.float{position:fixed;left:0;right:0;bottom:0;z-index:60;transform:translateY(120%);transition:.35s;
+  background:rgba(255,255,255,.95);border-top:1px solid var(--line);backdrop-filter:blur(8px);
+  padding:10px 16px calc(10px + env(safe-area-inset-bottom))}
+.float.show{transform:translateY(0)}
+.float .inner{max-width:560px;margin:0 auto;display:flex;align-items:center;gap:14px}
+.float .pr{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:24px;line-height:1;white-space:nowrap}
+.float .pr small{display:block;font-family:'Inter',sans-serif;font-weight:600;font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.float .cta{margin:0;font-size:16px;padding:13px 16px;box-shadow:none}
+
+@media(max-width:480px){h1{font-size:34px}h2{font-size:26px}.prints{grid-template-columns:1fr}.coach{flex-direction:column;text-align:center}.plumb::before{display:none}}
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="wrap center">
+    <span class="tag">📐 Protocolo · 12 semanas · Casa e academia</span>
+    <h1>Sua cabeça vive à frente dos ombros. <span class="hl">Isso tem conserto.</span></h1>
+    <p class="sub">Cabeça pra frente, ombro enrolado, aquela leve corcunda. Não é da idade nem falta de "sentar reto". É músculo que devia te segurar ereto e está desligado. O Reset Postural reativa esse músculo em 12 semanas: 25 minutos, 3x por semana, em casa ou na academia. Com fotos e testes pra você ver a evolução, não só sentir.</p>
+    <div class="posefig">
+      <div class="pose bad"><span class="glyph">🧎</span><span class="lbl">Hoje</span></div>
+      <div class="arrow">→</div>
+      <div class="pose good"><span class="glyph">🧍</span><span class="lbl">12 semanas</span></div>
+    </div>
+    <div class="hero-badges">
+      <span>🏠 Casa ou academia</span>
+      <span>⏱ 25 min por treino</span>
+      <span>⚡ Acesso imediato</span>
+    </div>
+    <div style="margin-top:26px"><a class="cta" onclick="openPay()">Quero endireitar minha postura<small>Acesso imediato no celular</small></a></div>
+    <p class="cta-sub">Pagamento seguro · Cartão e Pix</p>
+  </div>
+</header>
+
+<!-- SINAIS (checklist interativo) -->
+<section class="s-alt">
+  <div class="wrap plumb">
+    <h2>Marca o que<br>é você</h2>
+    <p class="lead">Sem julgamento. É entre você e a tela.</p>
+    <div class="check" id="check">
+      <label><input type="checkbox">Em foto de lado, sua cabeça aparece na frente dos ombros</label>
+      <label><input type="checkbox">Fim do dia o pescoço e o trapézio queimam e pesam</label>
+      <label><input type="checkbox">Já te chamaram de "curvado", "caído" ou "encolhido"</label>
+      <label><input type="checkbox">Passa horas no celular e no computador, todo dia</label>
+      <label><input type="checkbox">Você "senta reto" e em 5 minutos já desabou de novo</label>
+      <label><input type="checkbox">Tem dor de cabeça que começa na nuca, de tensão</label>
+      <label><input type="checkbox">Os ombros vivem enrolados pra frente, mesmo relaxado</label>
+    </div>
+    <div class="check-verdict" id="verdict">Marcou algum? Continua lendo.</div>
+  </div>
+</section>
+
+<!-- MECANISMO -->
+<section>
+  <div class="wrap plumb">
+    <h2>Por que "sentar reto"<br><span class="hl">nunca dura?</span></h2>
+    <p class="lead">Porque "sentar reto" é força de vontade, e força de vontade cansa em minutos. Postura boa não é vontade: é músculo. Os músculos que te seguram ereto (trapézio inferior, romboides e os flexores profundos do pescoço) estão dormindo de tanto tempo curvado. Os da frente (peito e a frente do pescoço) estão encurtados, te puxando pra frente o dia todo. Você está numa queda de braço que perde sozinho.</p>
+    <p class="lead">O Reset Postural inverte esse jogo em 3 fases: solta o que está travado na frente, acorda e fortalece o que está desligado atrás, e treina seu corpo a se sustentar ereto sem você pensar nisso.</p>
+    <div class="spine">
+      <div class="vert"><div class="plate"><span class="ph-tag">Semana 0</span><h3>Foto e testes</h3><p>Você tira a foto de perfil e mede sua postura com testes simples em casa. É seu ponto de partida, em imagem e em números.</p></div></div>
+      <div class="vert"><div class="plate"><span class="ph-tag">Semanas 1 a 4</span><h3>Fase 1 · Soltar</h3><p>Abre o que vive encurtado: peito, frente do pescoço e a parte de cima das costas. A frente para de te puxar pra baixo.</p></div></div>
+      <div class="vert"><div class="plate"><span class="ph-tag">Semanas 5 a 8</span><h3>Fase 2 · Acordar</h3><p>Acorda e fortalece a cadeia que te segura ereto. É aqui que os ombros voltam pro lugar e a cabeça recua.</p></div></div>
+      <div class="vert"><div class="plate"><span class="ph-tag">Semanas 9 a 12</span><h3>Fase 3 · Sustentar</h3><p>Resistência postural: seu corpo aprende a ficar alinhado o dia inteiro, no celular, na cadeira, em pé, sem esforço.</p></div></div>
+      <div class="vert"><div class="plate"><span class="ph-tag">Semana 12</span><h3>Nova foto</h3><p>Refaz a foto e os testes do início e compara lado a lado. A diferença você vê, não precisa acreditar.</p></div></div>
+    </div>
+    <div style="margin-top:28px"><a class="cta" onclick="openPay()">Começar minhas 12 semanas<small>3 fases · Casa e academia · 25 min por treino</small></a></div>
+  </div>
+</section>
+
+<!-- BENEFÍCIOS -->
+<section class="s-alt">
+  <div class="wrap plumb">
+    <h2>O que muda<br>em 12 semanas</h2>
+    <ul class="bens">
+      <li><b>Você parece mais alto e mais confiante:</b> ombro pra trás e cabeça no lugar mudam sua presença na hora</li>
+      <li><b>O pescoço e o trapézio param de queimar no fim do dia:</b> menos peso, menos tensão</li>
+      <li><b>Menos dor de cabeça de tensão:</b> a que nasce na nuca de tanto tempo curvado</li>
+      <li><b>A foto de perfil deixa de ser inimiga:</b> você compara semana 0 e semana 12 e vê a diferença</li>
+      <li><b>Prova em números:</b> testes no começo, meio e fim mostram sua postura mais forte</li>
+      <li><b>Cabe na rotina:</b> 25 minutos, 3x por semana, no horário que você escolher</li>
+      <li><b>Sem depender de equipamento:</b> versão casa e versão academia, com lista de substituição</li>
+      <li><b>Método de quem é especialista nisso:</b> postura é a especialidade do Lucas, sem mensalidade</li>
+    </ul>
+  </div>
+</section>
+
+<!-- AUTORIDADE + PROVA -->
+<section>
+  <div class="wrap plumb">
+    <h2>Quem assina o protocolo</h2>
+    <div class="coach">
+      <img src="assets/photo-lucas-avatar.webp" alt="Lucas Lima, personal trainer" loading="lazy" onerror="this.style.display='none'">
+      <div>
+        <h3>Lucas Lima</h3>
+        <p>Personal trainer especialista em <b>treino postural e funcional</b>: cabeça pra frente, ombro caído, dor de pescoço e coluna, correção de desequilíbrios. O Reset Postural usa o mesmo método de 3 fases dos alunos da consultoria.</p>
+      </div>
+    </div>
+    <div class="proof-num">
+      <div class="plate"><b>10 anos</b><span>de experiência</span></div>
+      <div class="plate"><b>+500</b><span>alunos atendidos</span></div>
+      <div class="plate"><b>3 fases</b><span>método autoral</span></div>
+    </div>
+    <div class="prints">
+      <img src="assets/proof-leo.webp" alt="Depoimento de aluno" loading="lazy" onerror="this.parentElement.style.display='none'">
+      <img src="assets/proof-camila.webp" alt="Depoimento de aluna" loading="lazy" onerror="this.style.display='none'">
+      <img src="assets/proof-rafaela.webp" alt="Depoimento de aluna" loading="lazy" onerror="this.style.display='none'">
+      <img src="assets/proof-nathalia.webp" alt="Depoimento de aluna" loading="lazy" onerror="this.style.display='none'">
+    </div>
+    <p class="prints-cap">Mensagens reais de alunos do Lucas. Cada corpo responde no seu tempo, conforme dedicação e individualidade.</p>
+  </div>
+</section>
+
+<!-- OFERTA -->
+<section class="s-alt" id="oferta">
+  <div class="wrap plumb">
+    <h2>Tudo que você recebe hoje</h2>
+    <div class="offer">
+      <div class="center"><span class="badge">⚡ Preço de lançamento</span></div>
+      <div class="stack">
+        <div class="it">Reset Postural · 12 Semanas (app no celular)</div>
+        <div class="it">Versão Casa + Versão Academia</div>
+        <div class="it">Bônus 1: Teste Postural (semanas 0, 6 e 12) com evolução automática</div>
+        <div class="it">Bônus 2: Guia da Foto que não Mente (antes e depois de perfil)</div>
+        <div class="it">Bônus 3: Reset de 2 minutos pra quem vive no celular</div>
+        <div class="it">Bônus 4: Postura no sono, na cadeira e na mochila</div>
+        <div class="it">Bônus 5: Lista de Substituição de exercícios</div>
+      </div>
+      <div class="price-row">
+        <div class="from" id="priceFrom"></div>
+        <div class="now" id="priceNow"></div>
+        <div class="alt" id="priceAlt"></div>
+        <div class="after" id="priceAfter"></div>
+      </div>
+      <p class="pay-line">Pagamento seguro · Cartão e Pix · Acesso imediato</p>
+      <a class="cta" onclick="openPay()">Quero começar agora<small>preço de lançamento</small></a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section>
+  <div class="wrap plumb">
+    <h2>"Mas será que serve pra mim?"</h2>
+    <div class="faq" style="margin-top:8px">
+      <details><summary>Tenho corcunda há anos, dá pra reverter?</summary><div class="a">A maior parte da postura "torta" do dia a dia é muscular e funcional: dá pra mudar bastante em qualquer idade. Se a curvatura é estrutural óssea (diagnóstico de cifose estrutural, escoliose acentuada ou osteoporose), o protocolo ainda ajuda, mas mostre ao seu médico ou fisioterapeuta antes de começar.</div></details>
+      <details><summary>Sinto dor no pescoço e nos ombros. Posso fazer?</summary><div class="a">A Fase 1 existe pra isso: soltar a tensão antes de fortalecer. Agora, se a dor desce pro braço, formiga, dá dormência nas mãos, ou se você tem tontura ao mexer o pescoço, procure um profissional antes. Depois o protocolo te espera.</div></details>
+      <details><summary>Não tenho academia</summary><div class="a">Tem versão casa completa: elástico, peso do corpo e o que você tiver em casa. Você começa hoje.</div></details>
+      <details><summary>Não tenho tempo</summary><div class="a">25 minutos, 3x por semana. É menos tempo do que você passa curvado no celular num único dia.</div></details>
+      <details><summary>Já tentei corretor de postura e não resolveu</summary><div class="a">O corretor segura você no lugar por fora e deixa o músculo ainda mais preguiçoso. Quando tira, volta tudo. Aqui é o contrário: você constrói o "corretor" por dentro, que é o músculo, e ele não sai mais.</div></details>
+      <details><summary>Sou iniciante, nunca treinei</summary><div class="a">Melhor ainda. A Fase 1 inteira é pra ensinar seu corpo a ativar os músculos certos, do zero, no seu ritmo.</div></details>
+      <details><summary>Em quanto tempo vejo diferença?</summary><div class="a">A maioria sente o pescoço e o ombro mais leves nas primeiras semanas. A mudança que aparece na foto se constrói ao longo das 12.</div></details>
+      <details><summary>Como recebo o acesso?</summary><div class="a">Na hora, no seu celular, assim que o pagamento confirma. Você salva a página na tela inicial e ela vira seu app das 12 semanas.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- URGÊNCIA -->
+<section>
+  <div class="wrap">
+    <div class="urg">
+      <p>⏳ <b>Preço de lançamento por tempo limitado.</b> Quando essa janela fechar, o protocolo sobe de preço e não volta. Quem entra agora paga menos pela mesma coisa.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="s-alt">
+  <div class="wrap center">
+    <h2>Daqui a 12 semanas, sua postura<br><span class="hl">vai estar como?</span></h2>
+    <p class="lead">Do jeito que está hoje, te puxando pra frente todo dia. Ou alinhada, mais forte e na foto pra provar. A diferença entre as duas é começar.</p>
+    <a class="cta" onclick="openPay()">Quero endireitar minha postura<small>preço de lançamento · Acesso imediato</small></a>
+    <div class="ps"><b>P.S.</b> Você já tentou se "endireitar" mil vezes na base da força de vontade e em 5 minutos esqueceu. Não é falta de disciplina: é músculo que ninguém treinou. O Reset Postural treina, em 25 minutos, 3x por semana. <b>Preço de lançamento só agora:</b> quando a janela fechar, ele sobe. Sua postura não vai se consertar sozinha esperando. A pergunta é se dessa vez você vai fazer diferente.</div>
+  </div>
+</section>
+
+<!-- FOOT -->
+<footer class="foot">
+  <div class="wrap">
+    <div class="sig">Reset Postural por <b>Lucas Lima</b></div>
+    <p style="color:var(--muted);font-size:13px;margin-top:6px"><a href="https://instagram.com/personaltrainerlucaslima" target="_blank" rel="noopener">@personaltrainerlucaslima</a></p>
+    <p class="disc">Este material é educativo e não substitui avaliação médica ou fisioterapêutica. Resultados variam conforme dedicação e individualidade. Se você tem dor que irradia pro braço, formigamento ou dormência nas mãos, tontura ao mexer o pescoço, ou diagnóstico de lesão na coluna, consulte um profissional de saúde antes de iniciar qualquer programa de exercícios.</p>
+  </div>
+</footer>
+
+<!-- BARRA FLUTUANTE -->
+<div class="float" id="float">
+  <div class="inner">
+    <div class="pr" id="floatPrice"><small>lançamento</small></div>
+    <a class="cta" onclick="openPay()">Endireitar postura</a>
+  </div>
+</div>
+
+<script>
+/* ====== LINK DE PAGAMENTO (cole quando tiver) ====== */
+const STRIPE_LINK = "";   // Stripe (€19, adaptive pricing por moeda). Vazio = botão vai pro WhatsApp.
+/* Redirect pós-compra no Stripe deve apontar pra:
+   https://lucaslimaef.github.io/reset-postural/acesso/?k=musculonaovontade  */
+const WHATSAPP_FALLBACK = "https://wa.me/351960259288?text=" +
+  encodeURIComponent("Olá Lucas! Quero o Reset Postural no preço de lançamento.");
+/* =================================================== */
+
+/* ====== PREÇOS POR MOEDA ====== */
+const PRICES={
+  EUR:{sym:'€',  launch:'19', normal:'27',  from:'67'},
+  USD:{sym:'$',  launch:'21', normal:'29',  from:'73'},
+  BRL:{sym:'R$', launch:'99', normal:'147', from:'347'}
+};
+/* ============================== */
+function detectCurrencyDevice(){
+  const tz=(Intl.DateTimeFormat().resolvedOptions().timeZone||'');
+  const lang=(navigator.language||'').toLowerCase();
+  if(/Sao_Paulo|Bahia|Fortaleza|Recife|Manaus|Belem|Cuiaba|Campo_Grande|Boa_Vista|Porto_Velho|Rio_Branco|Maceio|Araguaina|Santarem|Noronha/.test(tz)||lang==='pt-br') return 'BRL';
+  if(/^Europe\//.test(tz)||['pt-pt','es','fr','de','it','nl','el','fi','ga'].some(l=>lang.startsWith(l))) return 'EUR';
+  return 'USD';
+}
+const EUR_COUNTRIES=new Set(['PT','ES','FR','DE','IT','NL','BE','AT','IE','FI','GR','LU','SK','SI','EE','LV','LT','CY','MT','HR','AD','MC','SM','VA','XK','ME','GB','CH','NO','SE','DK','PL','CZ','HU','RO','BG','IS']);
+function currencyFromCountry(cc){
+  cc=(cc||'').toUpperCase();
+  if(cc==='BR') return 'BRL';
+  if(EUR_COUNTRIES.has(cc)) return 'EUR';
+  if(cc) return 'USD';
+  return null;
+}
+let CURRENT_CUR='EUR';
+function renderPrices(cur){
+  cur=cur||detectCurrencyDevice();
+  CURRENT_CUR=cur;
+  const p=PRICES[cur];
+  const others=['EUR','USD','BRL'].filter(c=>c!==cur);
+  document.getElementById('priceFrom').textContent='De '+p.sym+' '+p.from;
+  document.getElementById('priceNow').innerHTML='<small>'+p.sym+'</small>'+p.launch;
+  document.getElementById('priceAlt').textContent='≈ '+others.map(c=>PRICES[c].sym+' '+PRICES[c].launch).join('   ·   ');
+  document.getElementById('priceAfter').textContent='↑ Volta pra '+p.sym+' '+p.normal+' quando o lançamento fechar';
+  document.getElementById('floatPrice').innerHTML=p.sym+' '+p.launch+'<small>lançamento</small>';
+}
+renderPrices();
+(function detectByIP(){
+  const apis=[
+    {url:'https://ipwho.is/',       pick:d=>d&&d.success!==false?d.country_code:null},
+    {url:'https://ipapi.co/json/',  pick:d=>d?d.country_code:null}
+  ];
+  (async()=>{
+    for(const api of apis){
+      try{
+        const ctrl=new AbortController(); const t=setTimeout(()=>ctrl.abort(),2500);
+        const r=await fetch(api.url,{signal:ctrl.signal}); clearTimeout(t);
+        if(!r.ok) continue;
+        const cur=currencyFromCountry(api.pick(await r.json()));
+        if(cur){ renderPrices(cur); return; }
+      }catch(e){}
+    }
+  })();
+})();
+
+function openPay(){
+  try{
+    const p=PRICES[CURRENT_CUR];
+    fbq('track','InitiateCheckout',{content_name:'Reset Postural',value:parseInt(p.launch,10),currency:CURRENT_CUR});
+  }catch(e){}
+  window.location.href = STRIPE_LINK || WHATSAPP_FALLBACK;
+}
+
+/* checklist de sinais: contador + veredito */
+const checks=document.querySelectorAll('#check input');
+const verdict=document.getElementById('verdict');
+checks.forEach(c=>c.addEventListener('change',()=>{
+  const n=[...checks].filter(x=>x.checked).length;
+  if(n===0){verdict.classList.remove('on');verdict.innerHTML='Marcou algum? Continua lendo.';}
+  else if(n===1){verdict.classList.add('on');verdict.innerHTML='<b>1 sinal.</b> Seu corpo já está te puxando pra frente. A melhor hora de reagir é antes do segundo.';}
+  else{verdict.classList.add('on');verdict.innerHTML='<b>'+n+' sinais.</b> Sua postura não precisa de "sentar reto". Precisa de músculo treinado.';}
+}));
+
+/* barra flutuante aparece depois do hero */
+const float=document.getElementById('float');
+const hero=document.querySelector('.hero');
+window.addEventListener('scroll',()=>{
+  if(window.scrollY > hero.offsetHeight - 80) float.classList.add('show');
+  else float.classList.remove('show');
+});
+</script>
+</body>
+</html>
