@@ -23,6 +23,6 @@ Produto pago (€19) do personal trainer Lucas Lima, hospedado 100% no **GitHub 
 
 ## Pendente
 
-- Colar o link de pagamento do Stripe na `index.html` (procure por `STRIPE_LINK`). Enquanto vazio, o botão manda pro WhatsApp.
-- Configurar no painel do Stripe o redirect pós-compra pra `…/acesso/?k=musculonaovontade`.
-- Quando o plano do Netlify renovar, linkar a LP na esteira de produtos da `/bio`.
+- [x] Colar o link de pagamento do Stripe na `index.html` (feito 2026-06-14: `https://buy.stripe.com/5kQ28t9W50w57JS5tc08g0b`).
+- [ ] Configurar no painel do Stripe o redirect pós-compra pra `https://lucaslimaef.github.io/reset-postural/acesso/?k=musculonaovontade`.
+- [ ] Quando o plano do Netlify renovar, linkar a LP na esteira de produtos da `/bio`.
